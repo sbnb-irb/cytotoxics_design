@@ -1,10 +1,3 @@
----
-title: "Repository Overview"
-author: "Gema Rojas"
-date: "`r Sys.Date()`"
-output: html_document
----
-
 # Overview
 
 This repository contains data and scripts from the paper *AI-based design of cell-specific small molecule cytotoxics* [add citation]
