@@ -1,7 +1,7 @@
 #!/bin/bash
 
-singularity exec --cleanenv --no-mount /slgpfs/projects/irb35 --no-home --nv --bind $PWD:/mnt reinvent3_signaturizer_kbest.simg python ./run_predictions.py \
-    --model ./models/BXPC3.pkl \
-    --kbest_reduction ./kbest_dim_reduction/BXPC3.pkl \
-    --smiles_file ./example_smiles.txt \
-    --output_file ./BXPC3_predictions.csv
+singularity exec --cleanenv --contain --nv --bind $PWD:/repo reinvent3_signaturizer_kbest.simg python /repo/run_predictions.py \
+    --model /repo/models/BXPC3.p \
+    --kbest_reduction /repo/kbest_dim_reduction/BXPC3.p \
+    --smiles_file /repo/example_smiles.txt \
+    --output_file /repo/BXPC3_predictions.csv

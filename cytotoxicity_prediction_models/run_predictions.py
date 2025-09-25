@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import ExtraTreesClassifier
 import logging
 import argparse
+import os
+os.environ["TFHUB_CACHE_DIR"] = "/aloy/scratch/grojas/tf_tmp"
 
 # Configure logging
 logging.basicConfig(
@@ -20,7 +22,7 @@ logging.basicConfig(
 def parse_args():
     parser = argparse.ArgumentParser(description="Run cytotoxicity prediction model.")
     parser.add_argument("--model", type=str, required=True, help="Model name to use.")
-    parser.add_argument("--kbest_reduction", type=int, default=None, help="Number of top features to keep (optional).")
+    parser.add_argument("--kbest_reduction", type=str, default=None, help="Number of top features to keep (optional).")
     parser.add_argument("--smiles_file", type=str, required=True, help="Input SMILES file path.")
     parser.add_argument("--output_file", type=str, required=True, help="Path to save the output file.")
     return parser.parse_args()
