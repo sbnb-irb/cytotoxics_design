@@ -6,28 +6,29 @@ This repository contains data and scripts from the paper *AI-based design of cel
 
 # Folder Structure
 
-## 1. `screening_data/`
+## 1. `drug_screening_data.xlsx`
 
-Contains the experimental screening data.
+Contains all the experimental screening data. The different tabs correspond to:
 
-### a) `HTS/`
-- `HTS.csv`: High-throughput screening results (11,053 cpds).
-- `HTS_hits_confirmation.csv`: Confirmed hits from HTS (392 cpds).
-- `processed_HTS_hits_confirmation.csv`: Aggrefation of the 3 replicates from the HTS (1) and confirmation (2) experiments as mean of the 2 closest reps (392 cpds).
+- `HTS`: High-throughput screening results (11,053 cpds, 1 replicate).
+- `Confirmation experiment of HTS hits`: Confirmed hits from HTS (751 cpds, 2 replicates).
+- `Final training dataset`: Aggregation of the 3 replicates from the HTS (1) and confirmation (2) experiments as mean of the 2 closest reps (751 cpds).
+- `Validation of prediction models`: Experimental validation of the cytotoxicity prediction models (320 cpds, 2 replicates).
+- `Validation of generated molecules at 1 and 10 uM`: Validation at 1 and 10uM of the initial candidates from the 'generation' approach.
+- `Validation of prediction-only molecules at 1 and 10 uM`: Validation at 1 and 10uM of the initial candidates from the 'predictions-only' approach.
+- `DR generated molecules`: Dose-response measurements for the final candidates from the generated approach.
+- `DR prediction only molecules`: Dose-response measurements for final candidates for the 'prediction-only' approach.
+- `MTT 12 drugs DrugCell`: cytotoxicity AUC values from DrugCell vs the ones obtained in the lab via MTT for 12 selected compounds. [coming soon]
 
-### b) `Validation of prediction models/`
-- Experimental validation of the cytotoxicity prediction models.
-  
-### c) `Validation of generation vs library prediction strategies/`
-- Validation at 1 and 10uM of the initial candidates from the 'generation' and 'prediction-only' approaches.
-
-### d) `Dose-Response/`
-- `DR_data_IRB_predicted_molecules.csv`: Dose-response measurements for final candidates for the 'prediction-only' approach.
-- `DR_generated_molecules.csv`: Dose-response measurements for the final candidates from the generated approach.
-- 
 ---
 
-## 2. `cytotoxicity_prediction_models/`
+## 2. `high-scoring generated molecules.xlsx`
+
+Contains all the high-scoring, generated molecules for all the exercises.
+
+---
+
+## 3. `cytotoxicity_prediction_models/`
 
 Contains the models used for cytotoxicity prediction and examples of how to use them to predict cytotoxicity for new SMILES.
 
@@ -36,12 +37,6 @@ Contains the models used for cytotoxicity prediction and examples of how to use 
 - `kbest_dim_reduction/`: Pickle files containing the sckit objects needed to reduce the CC_GLOBAL descriptors (the models take the reduced descriptors as input).
 - `models/`: Pickle files with trained prediction models for each cell line.
 - `predict_IRB_library.py`: Python script to run predictions on new compounds.
-  
----
-
-## 3. `high_scoring_generated_molecules/`
-
-Contains all the high-scoring, generated molecules for all the exercises.
 
 ---
 
