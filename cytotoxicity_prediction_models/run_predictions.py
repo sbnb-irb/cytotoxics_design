@@ -10,7 +10,6 @@ from sklearn.ensemble import ExtraTreesClassifier
 import logging
 import argparse
 import os
-os.environ["TFHUB_CACHE_DIR"] = "/aloy/scratch/grojas/tf_tmp"
 
 # Configure logging
 logging.basicConfig(
@@ -21,9 +20,9 @@ logging.basicConfig(
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Run cytotoxicity prediction model.")
-    parser.add_argument("--model", type=str, required=True, help="Model name to use.")
-    parser.add_argument("--kbest_reduction", type=str, default=None, help="Number of top features to keep (optional).")
-    parser.add_argument("--smiles_file", type=str, required=True, help="Input SMILES file path.")
+    parser.add_argument("--model", type=str, required=True, help="Trained model file to use.")
+    parser.add_argument("--kbest_reduction", type=str, default=True, help="Dimensionality reduction model file.")
+    parser.add_argument("--smiles_file", type=str, required=True, help="Input SMILES file.")
     parser.add_argument("--output_file", type=str, required=True, help="Path to save the output file.")
     return parser.parse_args()
 
@@ -48,6 +47,7 @@ logging.info("Read SMILES file")
 with open(smiles_file, "r") as f:
     smiles = [line.strip() for line in f if line.strip()]
 
+# Get CC_GLOBAL signature for each SMILES and reduce dimensions (expected input for the model)
 logging.info("Signaturize compounds")
 sign = Signaturizer("GLOBAL")
 X = sign.predict(smiles).signature
