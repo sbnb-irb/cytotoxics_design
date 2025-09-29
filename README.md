@@ -18,7 +18,7 @@ Contains all the experimental screening data. The different tabs correspond to:
 - `Validation of prediction-only molecules at 1 and 10 uM`: Validation at 1 and 10uM of the initial candidates from the 'predictions-only' approach.
 - `DR generated molecules`: Dose-response measurements for the final candidates from the generated approach.
 - `DR prediction only molecules`: Dose-response measurements for final candidates for the 'prediction-only' approach.
-- `MTT 12 drugs DrugCell`: cytotoxicity AUC values from DrugCell vs the ones obtained in the lab via MTT for 12 selected compounds. [coming soon]
+- `MTT 12 drugs DrugCell`: Dose-response measurements obtained via MTT assay for 12 selected compounds from DrugCell (Extended Data Fig. 2b).
 
 ---
 
