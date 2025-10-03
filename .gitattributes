@@ -1,3 +1,4 @@
 cytotoxicity_prediction_models/reinvent3_signaturizer_kbest.simg filter=lfs diff=lfs merge=lfs -text
+cytotoxicity\ prediction\ models/reinvent3_signaturizer_kbest.simg filter=lfs diff=lfs merge=lfs -text
 *.ext filter=lfs diff=lfs merge=lfs -text
 *.simg filter=lfs diff=lfs merge=lfs -text
