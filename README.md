@@ -6,19 +6,14 @@ This repository contains data and scripts from the paper *AI-based design of cel
 
 # Folder Structure
 
-## 1. `drug_screening_data.xlsx`
+## 1. `drug screening data/`
 
-Contains all the experimental screening data. The different tabs correspond to:
+Contains all the experimental screening data. The different files correspond to:
 
-- `HTS`: High-throughput screening results (11,053 cpds, 1 replicate).
-- `Confirmation experiment of HTS hits`: Confirmed hits from HTS (751 cpds, 2 replicates).
-- `Final training dataset`: Aggregation of the 3 replicates from the HTS (1) and confirmation (2) experiments as mean of the 2 closest reps (751 cpds).
-- `Validation of prediction models`: Experimental validation of the cytotoxicity prediction models (320 cpds, 2 replicates).
-- `Validation of generated molecules at 1 and 10 uM`: Validation at 1 and 10uM of the initial candidates from the 'generation' approach.
-- `Validation of prediction-only molecules at 1 and 10 uM`: Validation at 1 and 10uM of the initial candidates from the 'predictions-only' approach.
-- `DR generated molecules`: Dose-response measurements for the final candidates from the generated approach.
-- `DR prediction only molecules`: Dose-response measurements for final candidates for the 'prediction-only' approach.
-- `MTT 12 drugs DrugCell`: Dose-response measurements obtained via MTT assay for 12 selected compounds from DrugCell (Extended Data Fig. 2b).
+- `HTS_and_confirmation.xlsx`: High-throughput screening results (11,053 cpds, 1 replicate) and confirmed hits from HTS (751 cpds, 2 replicates). Also incnludes the final training dataset (mean 2 closest replicates from HTS and confirmation) and a control screening of 320 on HEK293.
+- `Validation of prediction models.xlsx`: Experimental validation of the cytotoxicity prediction models (320 cpds, 2 replicates).
+- `Validation of generated molecules vs prediction only approach.xlsx`: Validation at 1 and 10uM of the initial candidates from the 'generation' and 'predictions only' approach, and posterior dose-response evaluation of the hits.
+- `MTT 12 drugs DrugCell`: Dose-response measurements obtained via MTT assay for 12 selected compounds from DrugCell.
 
 ---
 
