@@ -1,6 +1,6 @@
 # Overview
 
-This repository contains data and scripts from the paper *AI-based design of cell-specific small molecule cytotoxics* [add citation]
+This repository contains data and scripts from the paper *Phenotypic AI-based design of cell-specific small molecule cytotoxics* [citation pending]
 
 ---
 
