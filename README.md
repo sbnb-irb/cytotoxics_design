@@ -2,8 +2,8 @@
 
 This repository contains data and scripts from the paper *Phenotypic AI-based design of cell-specific small molecule cytotoxics*.
 
-**Citation**:  Phenotypic AI-based design of cell-specific small molecule cytotoxics
-Gema Rojas-Granado, Marta Sanchez-Soto, Jesus Calahorra, Maria Caballero, Israel Ramos, Martino Bertoni, Patrick Aloy
+**Citation**:  Phenotypic AI-based design of cell-specific small molecule cytotoxics. 
+Gema Rojas-Granado, Marta Sanchez-Soto, Jesus Calahorra, Maria Caballero, Israel Ramos, Martino Bertoni, Patrick Aloy. 
 bioRxiv 2025.10.15.682546; doi: <https://doi.org/10.1101/2025.10.15.682546> 
 
 ---
