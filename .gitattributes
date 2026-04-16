@@ -1,3 +1,6 @@
 cytotoxicity_prediction_models/reinvent3_signaturizer_kbest.simg filter=lfs diff=lfs merge=lfs -text
 *.simg filter=lfs diff=lfs merge=lfs -text
 *.ext filter=lfs diff=lfs merge=lfs -text
+paper_figures/extra_data/GEx_data_from_GDSC.txt filter=lfs diff=lfs merge=lfs -text
+paper_figures/extra_data/signatures_HTS.p filter=lfs diff=lfs merge=lfs -text
+paper_figures/extra_data/signatures_databases.p filter=lfs diff=lfs merge=lfs -text
