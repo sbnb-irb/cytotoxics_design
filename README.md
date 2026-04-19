@@ -47,3 +47,9 @@ Contains RNA sequencing data and processed expression matrices.
 - `geneinfo.xlsx`: Gene annotation information.
 - `raw_count_processed_names_mean_expression.xlsx`: Processed counts with mean expression per gene.
 - `sampleinfo.xlsx`: Metadata about the RNA-seq samples.
+
+---
+
+## 5. `paper_figures/`
+
+Contains all the code and extra data to reproduce the main and supplementary figures in the paper.
